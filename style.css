@@ -15,7 +15,6 @@ body .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 540px;
-  height: 169px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,6 +23,7 @@ body .wrapper {
   margin: 250px auto;
 }
 body .wrapper .image .img {
+  background-image: url(./assets/img4.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 169px;
@@ -31,22 +31,28 @@ body .wrapper .image .img {
   border-top-left-radius: 14.696px;
   border-bottom-left-radius: 14.696px;
 }
-body .wrapper .player {
+body .wrapper .player .nameOfSong,
+body .wrapper .player .artist {
+  margin-bottom: 10px;
+  color: black;
+}
+body .wrapper .player .slider {
+  background: #dadada;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 280px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 257px;
+  height: 3px;
+  margin-top: 20px;
+  cursor: pointer;
 }
-body .wrapper .player .nameOfSong,
-body .wrapper .player .artist {
-  color: black;
+body .wrapper .player .slider .progress {
+  background: red;
+  height: 3px;
+  border-radius: 5px;
 }
 body .wrapper .switch {
   display: -webkit-box;
@@ -55,6 +61,8 @@ body .wrapper .switch {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 25px;
+  width: 250px;
 }
 body .wrapper .switch .repeat {
   background-image: url(./assets/repeat.png);
@@ -84,12 +92,22 @@ body .wrapper .switch .next {
   width: 25px;
   height: 25px;
 }
+body .wrapper .like {
+  margin-right: 12px;
+}
 body .wrapper .like .spotify {
   background-image: url(./assets/spotify.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 25px;
   height: 25px;
+  margin-bottom: 55px;
+}
+body .wrapper .like .time {
+  color: #454545;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 body .wrapper .like .heart {
   background-image: url(./assets/heart.png);

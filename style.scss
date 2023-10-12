@@ -10,13 +10,13 @@ body {
     display: flex;
     justify-content: space-between;
     width: 540px;
-    height: 169px;
     align-items: center;
     border-radius: 14.696px;
     background: #fffef8;
     margin: 250px auto;
 
     .image .img {
+      background-image: url(./assets/img4.jpg);
       background-repeat: no-repeat;
       background-size: contain;
       width: 169px;
@@ -25,18 +25,31 @@ body {
       border-bottom-left-radius: 14.696px;
     }
     .player {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 280px;
       .nameOfSong,
       .artist {
+        margin-bottom: 10px;
         color: black;
+      }
+      .slider {
+        background: #dadada;
+        display: flex;
+        align-items: center;
+        width: 257px;
+        height: 3px;
+        margin-top: 20px;
+        cursor: pointer;
+        .progress {
+          background: red;
+          height: 3px;
+          border-radius: 5px;
+        }
       }
     }
     .switch {
       display: flex;
       justify-content: space-between;
+      margin-top: 25px;
+      width: 250px;
       .repeat {
         background-image: url(./assets/repeat.png);
         background-repeat: no-repeat;
@@ -67,12 +80,21 @@ body {
       }
     }
     .like {
+      margin-right: 12px;
       .spotify {
         background-image: url(./assets/spotify.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 25px;
         height: 25px;
+        margin-bottom: 55px;
+      }
+
+      .time {
+        color: #454545;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 15px;
       }
 
       .heart {
