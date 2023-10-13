@@ -56,6 +56,7 @@ body {
         background-size: contain;
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
       .back {
         background-image: url(./assets/back.png);
@@ -63,6 +64,7 @@ body {
         background-size: contain;
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
       .play {
         background-image: url(./assets/play.png);
@@ -70,6 +72,7 @@ body {
         background-size: contain;
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
       .next {
         background-image: url(./assets/next.png);
@@ -77,6 +80,7 @@ body {
         background-size: contain;
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
     }
     .like {
@@ -88,6 +92,7 @@ body {
         width: 25px;
         height: 25px;
         margin-bottom: 55px;
+        cursor: pointer;
       }
 
       .time {
@@ -103,6 +108,7 @@ body {
         background-size: contain;
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
     }
   }
