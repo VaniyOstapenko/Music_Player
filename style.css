@@ -71,6 +71,8 @@ body .wrapper .switch .repeat {
   width: 25px;
   height: 25px;
   cursor: pointer;
+  -webkit-animation: coin 5s infinite;
+          animation: coin 5s infinite;
 }
 body .wrapper .switch .back {
   background-image: url(./assets/back.png);
@@ -121,4 +123,25 @@ body .wrapper .like .heart {
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+
+@keyframes coin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes coin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

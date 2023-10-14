@@ -45,6 +45,7 @@ body {
         }
       }
     }
+
     .switch {
       display: flex;
       justify-content: space-between;
@@ -57,7 +58,9 @@ body {
         width: 25px;
         height: 25px;
         cursor: pointer;
+        animation: coin 5s infinite;
       }
+
       .back {
         background-image: url(./assets/back.png);
         background-repeat: no-repeat;
@@ -111,5 +114,21 @@ body {
         cursor: pointer;
       }
     }
+  }
+}
+@keyframes coin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes coin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
