@@ -18,9 +18,9 @@ const audio = document.querySelector('audio');
 let flag = false;
 
 const music = [
-    { id: 1, path: './music/song1.mp3', artist: 'The Hardkiss', nameOfSong: 'Кораблі', img: 'background-image: url(./assets/img1.jpg)' },
-    { id: 2, path: './music/song2.mp3', artist: 'Monatik', nameOfSong: 'Люді...Кораблі', img: 'background-image: url(./assets/img2.jpg)' },
-    { id: 3, path: './music/song3.mp3', artist: 'Jerri Heil feat. Przyłu', nameOfSong: 'Bracia', img: 'background-image: url(./assets/img3.jpg)' }
+    { id: 1, path: './music/song1.mp3', artist: 'The Hardkiss', nameOfSong: 'Кораблі', img: 'background-image: url(./assets/img1.jpg)', url: 'https://open.spotify.com/artist/4IJcztNtY5L7G3qK4yu1qt' },
+    { id: 2, path: './music/song2.mp3', artist: 'Monatik', nameOfSong: 'Люді...Кораблі', img: 'background-image: url(./assets/img2.jpg)', url: 'https://open.spotify.com/artist/6wbEgVlGqWb4I9tbMluu5Q' },
+    { id: 3, path: './music/song3.mp3', artist: 'Jerri Heil feat. Przyłu', nameOfSong: 'Bracia', img: 'background-image: url(./assets/img3.jpg)', url: 'https://open.spotify.com/artist/71DkA619tW0bpaMi4QBzmr' }
 ]
 
 let IndexSong = 0;
@@ -108,3 +108,7 @@ audio.addEventListener('timeupdate', ({ target }) => {
         time.innerHTML = `0${min}:${sec}`;
     }
 });
+
+spotify.addEventListener('click', () => {
+    window.open(music[IndexSong].url)
+})
